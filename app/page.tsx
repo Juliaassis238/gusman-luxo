@@ -30,29 +30,8 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-ink to-transparent" />
         </div>
 
-        <div className="container-edit relative z-10 flex min-h-[90vh] flex-col justify-center py-20">
-          <Reveal>
-            <div className="pt-32 sm:pt-48">
-              <p className="eyebrow mb-8 text-champagne">
-                {clinic.city} · {clinic.state}
-              </p>
-              <h1 className="max-w-3xl font-display text-display-lg text-paper opacity-0">
-                {clinic.doctorName}
-              </h1>
-              <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper/80">
-                Excelência em cirurgia oral e urgência 24h com atendimento humanizado e tecnologia de ponta.
-              </p>
-            </div>
-            <div className="mt-12 flex flex-wrap gap-4">
-              <a href={clinic.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary !bg-champagne !text-ink hover:!bg-paper">
-                Agendar avaliação
-              </a>
-              <Link href="/procedimentos/" className="btn-outline !border-paper/20 !text-paper hover:!border-champagne hover:!text-champagne">
-                Ver procedimentos
-              </Link>
-            </div>
-          </Reveal>
-        </div>
+        {/* Hero sem texto sobreposto, apenas a imagem */}
+        <div className="container-edit relative z-10 flex min-h-[90vh] flex-col justify-center py-20" />
         
         {/* Toques de dourado leves */}
         <div className="absolute top-1/4 -left-10 h-64 w-64 rounded-full bg-champagne/10 blur-[120px]" />

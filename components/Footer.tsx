@@ -4,7 +4,7 @@ import { clinic } from "@/lib/data";
 
 export function Footer() {
   return (
-    <footer className="hairline bg-paper-dim dark:bg-ink-soft">
+    <footer className="hairline bg-paper-dim shadow-lg dark:bg-ink-soft">
       <div className="container-edit grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="mb-5 flex items-center gap-3">
@@ -22,10 +22,9 @@ export function Footer() {
           <p className="eyebrow mb-5">Navegação</p>
           <ul className="space-y-3 text-sm text-graphite-soft dark:text-paper/60">
             <li><Link href="/sobre/" className="hover:text-champagne-deep dark:hover:text-champagne">Sobre</Link></li>
-            <li><Link href="/equipe/" className="hover:text-champagne-deep dark:hover:text-champagne">Equipe</Link></li>
-            <li><Link href="/especialidades/" className="hover:text-champagne-deep dark:hover:text-champagne">Especialidades</Link></li>
-            <li><Link href="/tecnologia/" className="hover:text-champagne-deep dark:hover:text-champagne">Tecnologia</Link></li>
-            <li><Link href="/resultados/" className="hover:text-champagne-deep dark:hover:text-champagne">Resultados</Link></li>
+            <li><Link href="/especializacoes/" className="hover:text-champagne-deep dark:hover:text-champagne">Especializações</Link></li>
+            <li><Link href="/procedimentos/" className="hover:text-champagne-deep dark:hover:text-champagne">Procedimentos</Link></li>
+
             <li><Link href="/depoimentos/" className="hover:text-champagne-deep dark:hover:text-champagne">Depoimentos</Link></li>
           </ul>
         </div>

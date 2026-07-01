@@ -5,10 +5,10 @@ const siteUrl = "https://drandregusman.github.io";
 const routes = [
   "",
   "sobre",
-  "equipe",
-  "especialidades",
-  "tecnologia",
-  "resultados",
+  "especializacoes",
+  "procedimentos",
+
+  "conteudo",
   "depoimentos",
   "contato",
 ];

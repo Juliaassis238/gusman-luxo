@@ -31,14 +31,14 @@
   }
 
   ::selection {
-    background-color: #C9A876;
+    background-color: #D4AF37;
     color: #141312;
   }
 }
 
 @layer utilities {
   .eyebrow {
-    @apply font-mono text-[0.7rem] uppercase tracking-widest2 text-champagne-deep dark:text-champagne;
+    @apply font-mono text-[0.7rem] uppercase tracking-widest2 text-[#D4AF37] dark:text-[#FFD700];
   }
 
   .hairline {
@@ -50,11 +50,11 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center gap-3 rounded-full bg-graphite px-7 py-3.5 font-body text-sm tracking-wide text-paper transition-all duration-500 ease-editorial hover:bg-champagne-deep dark:bg-paper dark:text-ink dark:hover:bg-champagne;
+    @apply inline-flex items-center gap-3 rounded-full bg-graphite px-7 py-3.5 font-body text-sm tracking-wide text-paper transition-all duration-500 ease-editorial hover:bg-[#D4AF37] dark:bg-paper dark:text-ink dark:hover:bg-[#FFD700];
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-3 rounded-full border border-graphite/25 px-7 py-3.5 font-body text-sm tracking-wide text-graphite transition-all duration-500 ease-editorial hover:border-champagne-deep hover:text-champagne-deep dark:border-paper/25 dark:text-paper dark:hover:border-champagne dark:hover:text-champagne;
+    @apply inline-flex items-center gap-3 rounded-full border border-graphite/25 px-7 py-3.5 font-body text-sm tracking-wide text-graphite transition-all duration-500 ease-editorial hover:border-[#D4AF37] hover:text-[#D4AF37] dark:border-paper/25 dark:text-paper dark:hover:border-[#FFD700] dark:hover:text-[#FFD700];
   }
 }
 
@@ -75,7 +75,7 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #C9A876;
+  background-color: #D4AF37;
   border-radius: 999px;
   border: 3px solid transparent;
   background-clip: content-box;

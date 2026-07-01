@@ -5,6 +5,7 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/Reveal";
 import { clinic, specializations, procedures, testimonials } from "@/lib/data";
 import { ReviewCard } from "@/components/ReviewCard";
 import { ServiceCarousel } from "@/components/ServiceCarousel";
+import { PhotoGalleryCarousel } from "@/components/PhotoGalleryCarousel";
 
 export const metadata: Metadata = {
   title: `${clinic.doctorName} — Odontologia Avançada em Sorocaba`,
@@ -18,7 +19,7 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] overflow-hidden bg-ink">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-cover.png"
+            src="/images/luxury/hero-lux.webp"
             alt={clinic.doctorName}
             fill
             className="object-cover opacity-60 grayscale-[0.2]"
@@ -59,7 +60,10 @@ export default function HomePage() {
         <div className="absolute top-1/4 -left-10 h-64 w-64 rounded-full bg-champagne/10 blur-[120px]" />
       </section>
 
-      {/* Carrossel de Serviços - Logo abaixo da capa */}
+      {/* Carrossel de Fotos - Logo abaixo da capa */}
+      <PhotoGalleryCarousel />
+
+      {/* Carrossel de Serviços */}
       <ServiceCarousel />
 
       {/* Seção Sobre o Dr. André Gusman */}
@@ -82,7 +86,7 @@ export default function HomePage() {
           </Reveal>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-xl">
              <Image
-                src="/images/hero-cover.png"
+                src="/images/luxury/clinic-1.jpg"
                 alt="Dr. André Gusman em atendimento"
                 fill
                 className="object-cover"

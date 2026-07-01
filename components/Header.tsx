@@ -11,10 +11,10 @@ import { clinic } from "@/lib/data";
 const NAV_LINKS = [
   { href: "/", label: "Início" },
   { href: "/sobre/", label: "Sobre" },
-  { href: "/equipe/", label: "Equipe" },
-  { href: "/especialidades/", label: "Especialidades" },
-  { href: "/tecnologia/", label: "Tecnologia" },
-  { href: "/resultados/", label: "Resultados" },
+  { href: "/especializacoes/", label: "Especializações" },
+  { href: "/procedimentos/", label: "Procedimentos" },
+
+  { href: "/conteudo/", label: "Conteúdo" },
   { href: "/depoimentos/", label: "Depoimentos" },
   { href: "/contato/", label: "Contato" },
 ];
@@ -24,7 +24,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line/70 bg-paper/85 backdrop-blur-md dark:border-line-dark/70 dark:bg-ink/85">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-line/70 bg-paper/85 backdrop-blur-md shadow-lg dark:border-line-dark/70 dark:bg-ink/85">
       <div className="container-edit flex h-20 items-center justify-between">
         <Link
           href="/"
@@ -36,8 +36,8 @@ export function Header() {
             <span className="hidden font-display text-base tracking-tight sm:block">
               Dr. André Gusman
             </span>
-            <span className="hidden font-mono text-[0.6rem] uppercase tracking-widest text-champagne sm:block">
-              ← Menu Principal
+            <span className="hidden font-mono text-[0.6rem] uppercase tracking-widest text-champagne-deep sm:block">
+              ← Voltar ao início
             </span>
           </div>
         </Link>
@@ -68,12 +68,12 @@ export function Header() {
               href={clinic.contact.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary !px-5 !py-2.5 text-xs !bg-champagne !text-ink hover:!bg-white transition-all"
+              className="btn-primary !px-5 !py-2.5 text-xs"
             >
               Agendar consulta
             </a>
-            <span className="absolute -bottom-6 right-0 whitespace-nowrap font-mono text-[0.55rem] text-champagne uppercase tracking-widest">
-              Consultoria Premium ↓
+            <span className="absolute -bottom-6 right-0 whitespace-nowrap font-mono text-[0.6rem] text-graphite-soft/60 dark:text-paper/40">
+              Resposta rápida via WhatsApp ↓
             </span>
           </div>
         </div>

@@ -57,35 +57,35 @@ export const procedures: Procedure[] = [
     name: "Clareamento dental",
     short: "Seu sorriso, seu cartão de visita.",
     description: "Realce o brilho do seu sorriso com procedimentos seguros e eficazes.",
-    image: "/images/service-1-clareamento.png",
+    image: "/images/procedimento-clareamento.jpg",
   },
   {
     slug: "odontopediatria",
     name: "Odontopediatria",
     short: "Cuidado e carinho para sorrisos que vão durar a vida toda.",
     description: "Atendimento especializado para crianças em um ambiente acolhedor, seguro e preparado para elas.",
-    image: "/images/service-2-odontopediatria.png",
+    image: "/images/gallery/IMG_3081.JPG",
   },
   {
     slug: "endodontia",
     name: "Tratamento de Canal",
     short: "Tecnologia e conforto no seu tratamento.",
     description: "Tratamento endodôntico para salvar seu dente com conforto, segurança e tecnologia de ponta.",
-    image: "/images/service-3-canal.png",
+    image: "/images/procedimento-limpeza.jpg",
   },
   {
     slug: "protese",
     name: "Próteses Dentárias",
     short: "Soluções personalizadas para restaurar estética e funcionalidade.",
     description: "Devolvemos o prazer de sorrir com segurança através de materiais de alta qualidade e resultados naturais.",
-    image: "/images/service-4-protese.png",
+    image: "/images/resultado-protese-after.jpg",
   },
   {
     slug: "cirurgia-oral",
     name: "Cirurgia Oral",
     short: "Extrações e procedimentos cirúrgicos com precisão.",
     description: "Extrações de sisos, canal tratado, de simples a complexa com segurança e precisão.",
-    image: "/images/service-5-cirurgia.png",
+    image: "/images/procedimento-siso.jpg",
   },
 ];
 
@@ -93,20 +93,20 @@ export const cases = [
   { 
     title: "Clareamento dental", 
     detail: "Protocolo supervisionado · Resultados visíveis",
-    before: "/images/resultado-clareamento-before.png",
-    after: "/images/resultado-clareamento-after.png"
+    before: "/images/resultado-clareamento-before.jpg",
+    after: "/images/resultado-clareamento-after.jpg"
   },
   { 
     title: "Restauração estética", 
     detail: "Dentística avançada · Naturalidade e função",
-    before: "/images/resultado-restauracao-before.png",
-    after: "/images/resultado-restauracao-after.png"
+    before: "/images/resultado-restauracao-before.jpg",
+    after: "/images/resultado-restauracao-after.jpg"
   },
   { 
     title: "Reabilitação com prótese", 
     detail: "Planejamento funcional completo e seguro",
-    before: "/images/resultado-protese-before.png",
-    after: "/images/resultado-protese-after.png"
+    before: "/images/resultado-protese-before.jpg",
+    after: "/images/resultado-protese-after.jpg"
   },
 ];
 

@@ -28,7 +28,7 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://drandregusman.github.io";
+const siteUrl = "https://juliaassis238.github.io/gusman-luxo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -19,10 +19,10 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] overflow-hidden bg-ink">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/luxury/hero-lux.webp"
+            src="/images/463D0013-C401-4CC7-A8AB-72E4B7F64A0F.PNG"
             alt={clinic.doctorName}
             fill
-            className="object-cover opacity-60 grayscale-[0.2]"
+            className="object-cover md:object-right lg:object-center opacity-60 grayscale-[0.2]"
             priority
             unoptimized
           />
@@ -86,7 +86,7 @@ export default function HomePage() {
           </Reveal>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-xl">
              <Image
-                src="/images/luxury/clinic-1.jpg"
+                src="/images/gallery/IMG_3085.JPG"
                 alt="Dr. André Gusman em atendimento"
                 fill
                 className="object-cover"

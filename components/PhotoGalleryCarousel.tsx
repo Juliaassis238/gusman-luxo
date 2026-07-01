@@ -5,11 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const GALLERY_IMAGES = [
-  "/images/luxury/clinic-1.jpg",
-  "/images/luxury/clinic-2.webp",
-  "/images/luxury/reception.jpg",
-  "/images/luxury/smile-lux.webp",
-
+  "/images/104AF436-0C90-4775-89F5-058B5EBDA923.PNG",
   "/images/gallery/IMG_3080.JPG",
   "/images/gallery/IMG_3081.JPG",
   "/images/gallery/IMG_3082.JPG",
@@ -75,7 +71,7 @@ export function PhotoGalleryCarousel() {
                 src={GALLERY_IMAGES[currentIndex]}
                 alt={`Imagem da galeria ${currentIndex + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain bg-ink/20"
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />

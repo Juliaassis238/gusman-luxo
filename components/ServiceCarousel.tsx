@@ -58,7 +58,7 @@ export function ServiceCarousel() {
                 src={procedures[currentIndex].image || ""}
                 alt={procedures[currentIndex].name}
                 fill
-                className="object-cover"
+                className="object-contain bg-ink/20 md:object-cover"
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />

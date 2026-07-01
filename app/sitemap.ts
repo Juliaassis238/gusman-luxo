@@ -1,0 +1,25 @@
+import type { MetadataRoute } from "next";
+
+const siteUrl = "https://drandregusman.github.io";
+
+const routes = [
+  "",
+  "sobre",
+  "equipe",
+  "especialidades",
+  "tecnologia",
+  "resultados",
+  "depoimentos",
+  "contato",
+];
+
+export const dynamic = "force-static";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return routes.map((route) => ({
+    url: `${siteUrl}/${route}${route ? "/" : ""}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: route === "" ? 1 : 0.7,
+  }));
+}

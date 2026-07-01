@@ -32,9 +32,14 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           <Logo className="h-7 w-7" />
-          <span className="hidden font-display text-base tracking-tight sm:block">
-            Dr. André Gusman
-          </span>
+          <div className="flex flex-col">
+            <span className="hidden font-display text-base tracking-tight sm:block">
+              Dr. André Gusman
+            </span>
+            <span className="hidden font-mono text-[0.6rem] uppercase tracking-widest text-champagne sm:block">
+              ← Menu Principal
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -58,14 +63,19 @@ export function Header() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <ThemeToggle />
-          <a
-            href={clinic.contact.whatsappHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary !px-5 !py-2.5 text-xs"
-          >
-            Agendar consulta
-          </a>
+          <div className="relative">
+            <a
+              href={clinic.contact.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary !px-5 !py-2.5 text-xs !bg-champagne !text-ink hover:!bg-white transition-all"
+            >
+              Agendar consulta
+            </a>
+            <span className="absolute -bottom-6 right-0 whitespace-nowrap font-mono text-[0.55rem] text-champagne uppercase tracking-widest">
+              Consultoria Premium ↓
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center gap-3 lg:hidden">

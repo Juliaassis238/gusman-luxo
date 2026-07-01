@@ -10,17 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#FBF9F5",
-        "paper-dim": "#F3EFE7",
-        sand: "#EDE6D8",
-        champagne: "#C9A876",
-        "champagne-deep": "#A9895C",
-        graphite: "#232220",
-        "graphite-soft": "#4A4844",
-        ink: "#141312",
-        "ink-soft": "#1E1D1B",
-        line: "#DDD5C4",
-        "line-dark": "#3A3733",
+        paper: "#FFFFFF",
+        "paper-dim": "#F8F8F8",
+        sand: "#F0EAD6",
+        champagne: "#D4AF37",
+        "champagne-deep": "#B8860B",
+        graphite: "#1A1A1A",
+        "graphite-soft": "#333333",
+        ink: "#0A0A0A",
+        "ink-soft": "#121212",
+        line: "#E5E5E5",
+        "line-dark": "#262626",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],

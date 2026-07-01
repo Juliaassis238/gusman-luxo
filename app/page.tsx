@@ -19,10 +19,10 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] overflow-hidden bg-ink">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/463D0013-C401-4CC7-A8AB-72E4B7F64A0F.PNG"
+            src="/images/hero-dark-gold.png"
             alt={clinic.doctorName}
             fill
-            className="object-cover md:object-right lg:object-center opacity-60 grayscale-[0.2]"
+            className="object-cover opacity-80"
             priority
             unoptimized
           />
@@ -32,19 +32,17 @@ export default function HomePage() {
 
         <div className="container-edit relative z-10 flex min-h-[90vh] flex-col justify-center py-20">
           <Reveal>
-            <p className="eyebrow mb-8 text-champagne">
-              {clinic.city} · {clinic.state} — {clinic.tagline}
-            </p>
-            <h1 className="max-w-3xl font-display text-display-xl text-paper">
-              Precisão Clínica.
-              <br />
-              <span className="italic text-champagne">
-                Cuidado Humano.
-              </span>
-            </h1>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper/80">
-              Excelência em cirurgia oral e urgência 24h com atendimento humanizado e tecnologia de ponta.
-            </p>
+            <div className="pt-32 sm:pt-48">
+              <p className="eyebrow mb-8 text-champagne">
+                {clinic.city} · {clinic.state}
+              </p>
+              <h1 className="max-w-3xl font-display text-display-lg text-paper opacity-0">
+                {clinic.doctorName}
+              </h1>
+              <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper/80">
+                Excelência em cirurgia oral e urgência 24h com atendimento humanizado e tecnologia de ponta.
+              </p>
+            </div>
             <div className="mt-12 flex flex-wrap gap-4">
               <a href={clinic.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary !bg-champagne !text-ink hover:!bg-paper">
                 Agendar avaliação
